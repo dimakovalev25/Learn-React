@@ -8,6 +8,7 @@ const Dialogs = (props) => {
 debugger
     let messagesElements = props.messages.map( (m) => {
         return  <Message message={m.message}/>
+
     }
 )
 
