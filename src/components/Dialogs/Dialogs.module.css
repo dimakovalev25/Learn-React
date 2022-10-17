@@ -1,11 +1,15 @@
 .dialogs {
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 2fr 5fr 5fr;
 
 }
 
 .dialogsItems {
     padding: 10px;
+}
+
+.dialogUser {
+    /*background-color: #1161A3;*/
 }
 
 .dialogsItems .active {

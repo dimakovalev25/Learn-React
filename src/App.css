@@ -18,4 +18,11 @@
 	/*padding: 10px;*/
 }
 
+.navbar-wrapper {
+	grid-area: n;
+	/*background-color: #FFCCBD;*/
+	background-color: #8AB4F8;
+	padding: 20px;
+}
+
 

@@ -7,16 +7,23 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import News from "./components/News/News";
 import Friends from "./components/Friends/Friends";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 import {BrowserRouter, Route} from "react-router-dom";
+import BestFriends from "./components/BestFriends/BestFriends";
+
 
 const App = (props) => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
-                <Navbar/>
 
+                <div className='navbar-wrapper'>
+                <Navbar/>
+                <Sidebar />
+                <BestFriends />
+                </div>
                 <div className='app-wrapper-content'>
                     <Route path='/dialogs' render={ () => <Dialogs
                         state={props.state.dialogsPage} />} />
