@@ -18,7 +18,6 @@ const Dialogs = (props) => {
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
                 {dialogsElements}
-                img
             </div>
             <div className={s.messages}>
                 {messagesElements}
