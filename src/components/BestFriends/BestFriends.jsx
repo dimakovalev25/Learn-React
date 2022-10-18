@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './BestFriends.module.css'
+import state from "../../redux/state";
 
 const BestFriends = (props) => {
  return (

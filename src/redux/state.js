@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
 
     profilePage: {
@@ -7,6 +9,7 @@ let state = {
             {id: 3, post: "--Are yo OK?", likesCount: 22},
         ],
     },
+
 
     dialogsPage: {
         usermessages: [
@@ -26,6 +29,7 @@ let state = {
             // {id: 5, message: "OK?"},
             // {id: 6, message: "Yo!"},
         ],
+
         dialogs: [
             {id: 1, name: "Sasha"},
             {id: 2, name: "Andrey"},
@@ -34,6 +38,7 @@ let state = {
             // {id: 5, name: "Anya"},
             {id: 6, name: "Kesha"}
         ],
+
         bestfriends: [
             {id: 1, bestfriend: "Alex"},
             {id: 2, bestfriend: "Alexey"},
@@ -41,5 +46,18 @@ let state = {
         ],
     },
 };
+
+export let addPost = (postMessage) => {
+
+    let newPost = {
+        id: 5,
+        post: postMessage,
+        likesCount: 0,
+    };
+
+    state.profilePage.posts.push(newPost);
+    rerenderEntireTree(state);
+
+}
 
 export default state;
